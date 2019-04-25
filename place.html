@@ -1,0 +1,186 @@
+<script>
+    // 登录判断
+const a=localStorage.getItem("随心")
+if(a !='123456') {
+    window.location.href='Sign.html'
+}
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="js/mui.min.js"></script>
+  <link href="css/mui.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/place.css">
+  <script type="text/javascript" charset="utf-8">
+      mui.init();
+  </script>
+</head>
+<body>
+      	<!-- 头部 -->
+	    <div class="head">
+            <p>随心</p>
+        </div>
+        <!-- 主体 -->
+        <div class="mui-scroll-wrapper" id="box">
+            <div class="mui-scroll">
+                <div class="mui-content content">
+                    <span>宠物点击率：</span>
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell">蛇
+                            <span class="mui-badge">1</span>
+                        </li>
+                        <li class="mui-table-view-cell">荷兰猪
+                            <span class="mui-badge mui-badge-primary">12</span>
+                        </li>
+                        <li class="mui-table-view-cell">仓鼠
+                            <span class="mui-badge mui-badge-success">123</span>
+                        </li>
+                        <li class="mui-table-view-cell">猪
+                            <span class="mui-badge mui-badge-warning">3</span>
+                        </li>
+                        <li class="mui-table-view-cell">猫
+                            <span class="mui-badge mui-badge-danger">345</span>
+                        </li>
+                        <li class="mui-table-view-cell">狗狗
+                            <span class="mui-badge mui-badge-purple">456</span>
+                        </li>
+                    </ul>
+                    <p>宠物介绍：</p>
+                    <hr/>
+                    <div class="mui-content-padded">
+                        <p>波斯猫:</p>
+                        <p>
+                            <img src="imges/d21.jpg" data-preview-src="" data-preview-group="1">
+                        </p>
+                        <p>波斯猫（Persian cat）是以阿富汗的土种长毛猫和土耳其的安哥拉长毛猫为基础，在英国经过100多年的选种繁殖，于1860年诞生的一个品种。波斯猫是最常见的长毛猫，波斯猫有一张讨人喜爱的面庞，长而华丽的背毛，优雅的举止，故有“猫中王子”、“王妃”之称，是世界上爱猫者最喜欢的纯种猫之一，占有极其重要的地位。</p>
+                    </div>
+                    <hr/>
+                    <div class="mui-content-padded">
+                        <p>金毛:</p>
+                        <p>
+                            <img src="imges/d22.jpg" data-preview-src="" data-preview-group="1">
+                        </p>
+                        <p>金毛寻回犬是最常见的家犬之一，它很容易养，有耐心并且对主人要求不多，只要定期运动，食物和兽医体检就可以了。它属于匀称、有力、活泼的一个犬种，特征是稳固、身体各部位配合合理，腿既不太长也不笨拙，表情友善，个性热情、机警、自信而且不怕生，性格讨人喜欢。金毛犬最早是一种寻回猎犬，现在大多作为导盲犬与宠物狗。对小孩子或者婴儿十分友善。金毛犬是位列世界犬种智商排行的第四名。</p>
+                    </div>
+                    <hr/>
+                    <div class="mui-content lianjie">
+                        明星宠物：
+                        <div class="mui-row row">
+                            <div class="mui-col-xs-3 ">
+                                <div>
+                                    <img src="imges/w1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mui-col-xs-3 ">
+                                <div>
+                                    <img src="imges/w2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mui-col-xs-3 ">
+                                <div>
+                                    <img src="imges/w3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mui-col-xs-3 ">
+                                <div>
+                                    <img src="imges/w4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mui-col-xs-3 ">
+                                <div>
+                                    <img src="imges/w5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mui-col-xs-3 ">
+                                <div>
+                                    <img src="imges/w6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mui-col-xs-3 ">
+                                <div>
+                                    <img src="imges/w7.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mui-col-xs-3 ">
+                                <div>
+                                    <img src="imges/w8.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mui-col-xs-3 ">
+                                <div>
+                                    <img src="imges/w9.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mui-col-xs-3 ">
+                                <div>
+                                    <img src="imges/w10.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mui-col-xs-3 ">
+                                <div>
+                                    <img src="imges/w11.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mui-col-xs-3 ">
+                                <div>
+                                    <img src="imges/w12.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+       <!-- 底部 -->
+       <div class="Navigation mui-content">
+          <div class="mui-row">
+              <div class="mui-col-xs-3 ">
+                  <span class="mui-icon mui-icon-home "></span>
+                  <a href="index.html"><p class="">首页</p></a>
+  
+              </div>
+              <div class="mui-col-xs-3">
+                  <span class="mui-icon mui-icon-star "></span>
+                  <a href="love.html"><p class="">动漫</p></a>
+              </div>
+              <div class="mui-col-xs-3">
+                  <span class="mui-icon mui-icon-chatboxes "></span>
+                  <a href="message.html"><p class="">风景</p></a>
+              </div>
+              <div class="mui-col-xs-3">
+                  <span class="mui-icon mui-icon-flag active"></span>
+                  <p class="active">宠物</p>
+              </div>
+          </div>
+          <!-- <div>
+              <span class=" mui-icon mui-icon-home"></span>
+          </div> -->
+          
+      </div>
+
+      <script>
+          mui('.mui-scroll-wrapper').scroll({
+                indicators: false,
+	            deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+            });
+            mui.previewImage();
+
+      </script>
+  
+</body>
+</html>

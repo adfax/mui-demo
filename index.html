@@ -1,0 +1,212 @@
+<script>
+    // 登录判断
+const a=localStorage.getItem("随心")
+if(a !='123456') {
+    window.location.href='Sign.html'
+}
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+    	<!-- 头部 -->
+	<div class="head">
+        <p>随心</p>
+    </div>
+       <!-- 底部 -->
+    <div class="Navigation mui-content">
+        <div class="mui-row">
+            <div class="mui-col-xs-3 ">
+                <span class="mui-icon mui-icon-home active"></span>
+                <p class="active">首页</p>
+
+            </div>
+            <div class="mui-col-xs-3">
+                <span class="mui-icon mui-icon-star"></span>
+                <a href="love.html"><p>动漫</p></a>
+            </div>
+            <div class="mui-col-xs-3">
+                <span class="mui-icon mui-icon-chatboxes"></span>
+                <a href="message.html"><p>风景</p></a>
+            </div>
+            <div class="mui-col-xs-3">
+                <span class="mui-icon mui-icon-flag"></span>
+                <a href="place.html"><p>宠物</p></a>
+            </div>
+        </div>
+    </div>
+
+  <!-- 侧滑导航根容器 -->
+    <div class="mui-off-canvas-wrap mui-draggable mui-scalable">
+    <!-- 菜单容器 -->
+        <aside class="mui-off-canvas-left">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="scrollro">
+                        <div class="mui-card">
+                            <p>分类选择</p>
+                            <ul class="mui-table-view mui-table-view-chevron">
+                                <li class="mui-table-view-cell mui-collapse"><a class="mui-navigate-right" href="#">动漫</a>
+                                    <ul class="mui-table-view mui-table-view-chevron">
+                                        <li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">日漫</a>
+                                        </li>
+                                        <li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">国漫</a>
+                                        </li>
+                                        <li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">美漫</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mui-table-view-cell mui-collapse"><a class="mui-navigate-right" href="#">风景</a>
+                                    <ul class="mui-table-view mui-table-view-chevron">
+                                        <li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">自然</a>
+                                        </li>
+                                        <li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">都市</a>
+                                        </li>
+                                        <li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">天空</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mui-table-view-cell mui-collapse"><a class="mui-navigate-right" href="#">宠物</a>
+                                    <ul class="mui-table-view mui-table-view-chevron">
+                                        <li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">狗狗</a>
+                                        </li>
+                                        <li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">小猫</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                
+                        </div>
+                        <div class="portrait">
+                            <img src="imges/456.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    <!-- 主页面容器 -->
+        <div class="mui-inner-wrap">
+      <!-- 主页面标题 -->
+
+            <div class="mui-content mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="mui-slider">
+                        <div class="mui-slider-group mui-slider-loop">
+                      <!--支持循环，需要重复图片节点-->
+                            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="imges/23.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img src="imges/24.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img src="imges/25.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img src="imges/26.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img src="imges/23.jpg" /></a></div>
+                            <!--支持循环，需要重复图片节点-->
+                            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="imges/24.jpg" /></a></div>
+                        </div>
+                    </div>
+                    <div class="mui-content lianjie">
+                        <div class="mui-row">
+                            <div class="mui-col-xs-3 ">
+                                <p>话题</p>
+                            
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <p>专题</p>
+                            </div>
+                            <div class="mui-col-xs-3">
+                               <p>文章</p>
+                            </div>
+                            <div class="mui-col-xs-3">
+                                <p>认证</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr/>
+
+                    <div class="mui-card">
+                <!--页眉，放置标题-->
+                        <div class="mui-card-header">语录</div>
+                <!--内容区-->
+
+                            <div class="mui-card-content">
+                                <p>
+                                    人生快乐不快乐看心情，心情好不好看心态，心态中不中看修炼。
+                                    有的路，是脚去走。有的路，要心去走。绊住脚的，往往不是荆棘和石头，而是心。
+                                    所以，看起来是路铺展在我们眼前，实际上，是心扑腾在路上。
+                                </p>
+                            </div>
+                <!--页脚，放置补充信息或支持的操作-->
+                            <div class="mui-card-footer"><a href="#">查看更多</a></div>
+                    </div>
+    
+                    <div class="mui-card">
+                        <!--页眉，放置标题-->
+                        <div class="mui-card-header">四处是风景</div>
+                        <!--内容区-->
+                        <div class="mui-card-content">
+                            <img src="imges/516.jpg" alt="">
+                        </div>
+                        <!--页脚，放置补充信息或支持的操作-->
+                        <div class="mui-card-footer">夕阳</div>
+                    </div>
+                    <div class="mui-card">
+                    <!--页眉，放置标题-->
+                        <div class="mui-card-header">宠物</div>
+                        <!--内容区-->
+                        <div class="mui-card-content">
+                            <img src="imges/25.jpg" alt="">
+                        </div>
+                        <!--页脚，放置补充信息或支持的操作-->
+                        <div class="mui-card-footer">我想养宠物啊！！！！！！！</div>
+                    </div>
+                    <div class="mui-card">
+                            <!--页眉，放置标题-->
+                        <div class="mui-card-header">国漫</div>
+                        <!--内容区-->
+                        <div class="mui-card-content">
+                            <img src="imges/30.jpg" alt="">
+                        </div>
+                        <!--页脚，放置补充信息或支持的操作-->
+                        <div class="mui-card-footer">等待第2季中。。。。。。</div>
+                    </div>
+    
+                </div>
+            </div>  
+        </div>
+    </div>
+
+
+
+    <script>
+      mui.init({
+                
+            });
+            
+            mui.ready(function(){
+                mui(".mui-scroll-wrapper").scroll({
+                    bounce: true //是否启用回弹
+                });
+                
+            });
+            
+            var gallery = mui('.mui-slider');
+            gallery.slider({
+              interval:2000//自动轮播周期，若为0则不自动播放，默认为0；
+            });
+            mui('.mui-scroll-wrapper').scroll({
+                indicators: false,
+	            deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+            });
+    </script>
+</body>
+</html>

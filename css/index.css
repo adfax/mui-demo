@@ -1,0 +1,56 @@
+/* .mui-slider .mui-slider-group .mui-slider-item {
+  height: 230px;
+  margin-top: 40px;
+} */
+/* body {
+  padding-top: 60px;
+} */
+
+
+.mui-slider {
+  height: 230px;
+  margin-bottom: 20px;
+}
+
+.mui-card-content img {
+  width: 100%;
+  height: 210px;
+}
+.mui-card-header {
+  font-size: 16px;
+  color: #8F8F93;
+}
+.mui-card-content {
+  padding: 0 5px;
+}
+.mui-card-content p {
+  text-indent: 2em;
+}
+.lianjie {
+  text-align: center
+}
+.scrollro {
+  width: 290px;
+  height: 400px;
+  margin-top: 50px;
+  padding-top: 20px;
+  background-color: #fff;
+  color: #000;
+}
+.mui-card p {
+  color: #000;
+}
+.portrait {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.portrait img {
+  width: 100%;
+}
+.mui-card-content p {
+  color: #8F8F93;
+}

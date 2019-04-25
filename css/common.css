@@ -1,0 +1,41 @@
+.head {
+  height: 30px;
+  width: 100%;
+  border-bottom: 1px solid #86CE2F;
+  text-align: center;
+  line-height: 30px;
+  background-color: #86CE2F;
+  margin-bottom: 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+.head p {
+  color: #fff
+}
+.Navigation {
+  height: 50px;
+  width: 100%;
+  background-color: #86CE2F;
+  padding-top: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+}
+.Navigation span{
+  display: block;
+}
+.Navigation span,
+.Navigation p {
+  color: #fff;
+  text-align: center;
+}
+.Navigation .mui-col-xs-3 .active {
+  color: #C3D08B;
+}
+.mui-scroll-wrapper {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}

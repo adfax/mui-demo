@@ -1,0 +1,137 @@
+<script>
+    // 登录判断
+const a=localStorage.getItem("随心")
+if(a !='123456') {
+    window.location.href='Sign.html'
+}
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="js/mui.min.js"></script>
+  <link href="css/mui.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/common.css">
+  <!-- <link rel="stylesheet" href="css/message.css"> -->
+  <script type="text/javascript" charset="utf-8">
+      mui.init();
+  </script>
+</head>
+<body>
+      	<!-- 头部 -->
+	<div class="head">
+      <p>随心</p>
+    </div>
+
+    <div class="mui-scroll-wrapper" id="box">
+        <div class="mui-scroll">
+            <ul class="mui-table-view lift-nav">
+                <li class="mui-table-view-cell mui-media yeshan" id="">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-right" src="imges/f1.jpg">
+                        <div class="mui-media-body">
+                            山野
+                            <p class='mui-ellipsis'>享受大自然的清晰</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-right" src="imges/f2.jpg">
+                        <div class="mui-media-body">
+                            都市
+                            <p class='mui-ellipsis'>再忙碌，也有风景。</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media kudu">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-right" src="imges/f3.jpg">
+                        <div class="mui-media-body">
+                            孤独
+                            <p class='mui-ellipsis'>再孤独也要去发现身边的美</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+
+
+
+                <div class="lift-target">
+                    <div class="mui-card t1">
+                            <!--页眉，放置标题-->
+                        <div class="mui-card-header">山野</div>
+                        <!--内容区-->
+                        <div class="mui-card-content">
+                            <img src="imges/f1.jpg" alt="">
+                        </div>
+                        <!--页脚，放置补充信息或支持的操作-->
+                        <div class="mui-card-footer">日出而作日落而息，美好的一天从日出开始，日落结束。</div>
+                    </div>
+
+                    <div class="mui-card t2" >
+                            <!--页眉，放置标题-->
+                        <div class="mui-card-header">都市</div>
+                        <!--内容区-->
+                        <div class="mui-card-content">
+                            <img src="imges/f2.jpg" alt="">
+                        </div>
+                        <!--页脚，放置补充信息或支持的操作-->
+                        <div class="mui-card-footer">高楼大厦，车水马龙，用美的眼光去发现美。</div>
+                    </div>
+
+                    <div class="mui-card t3" >
+                            <!--页眉，放置标题-->
+                        <div class="mui-card-header">孤独</div>
+                        <!--内容区-->
+                        <div class="mui-card-content">
+                            <img src="imges/f3.jpg" alt="">
+                        </div>
+                        <!--页脚，放置补充信息或支持的操作-->
+                        <div class="mui-card-footer">与其自唉自叹的浪费时间，不如带上你的相机，拍下身边的美。</div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+
+
+
+       <!-- 底部 -->
+        <div class="Navigation mui-content">
+            <div class="mui-row">
+                <div class="mui-col-xs-3 ">
+                    <span class="mui-icon mui-icon-home "></span>
+                    <a href="index.html"><p class="">首页</p></a>
+  
+                </div>
+                <div class="mui-col-xs-3">
+                    <span class="mui-icon mui-icon-star "></span>
+                    <a href="love.html"><p class="">动漫</p></a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <span class="mui-icon mui-icon-chatboxes active"></span>
+                    <p class="active">风景</p>
+                </div>
+                <div class="mui-col-xs-3">
+                    <span class="mui-icon mui-icon-flag"></span>
+                    <a href="place.html"><p>宠物</p></a>
+                </div>
+            </div>
+        </div>
+  
+
+      <script>
+            mui('.mui-scroll-wrapper').scroll({
+                indicators: false,
+	            deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+            });
+   
+      </script>
+</body>
+</html>

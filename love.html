@@ -1,0 +1,131 @@
+<script>
+    // 登录判断
+const a=localStorage.getItem("随心")
+if(a !='123456') {
+    window.location.href='Sign.html'
+}
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="js/mui.min.js"></script>
+  <link href="css/mui.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/love.css">
+  <script type="text/javascript" charset="utf-8">
+      mui.init();
+  </script>
+</head>
+<body>
+      	<!-- 头部 -->
+	<div class="head">
+        <p>随心</p>
+    </div>
+
+
+
+
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+
+            <div class="mui-slider">
+                <div class="mui-slider-group mui-slider-loop">
+                    <!--支持循环，需要重复图片节点-->
+                    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="imges/d1.jpg" /></a></div>
+                    <div class="mui-slider-item"><a href="#"><img src="imges/d2.jpg" /></a></div>
+                    <div class="mui-slider-item"><a href="#"><img src="imges/d3.jpg" /></a></div>
+                    <div class="mui-slider-item"><a href="#"><img src="imges/d4.jpg" /></a></div>
+                    <div class="mui-slider-item"><a href="#"><img src="imges/d1.jpg" /></a></div>
+                    <!--支持循环，需要重复图片节点-->
+                    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="imges/d2.jpg" /></a></div>
+                </div>
+            </div>
+
+            <div class="mui-content lianjie">
+                <div class="mui-row row">
+                    <div class="mui-col-xs-4 ">
+                        <p>国漫</p>
+      
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <p>日漫</p>
+                    </div>
+                    <div class="mui-col-xs-4">
+                       <p>资讯</p>
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <p>周边</p>
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <p>怀旧</p>
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <p>热血</p>
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <p>同人</p>
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <p>漫画</p>
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <p>coos</p>
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <p>剪辑</p>
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <p>歌曲</p>
+                    </div>
+                    <div class="mui-col-xs-4">
+                        <p>配音</p>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+       <!-- 底部 -->
+    <div class="Navigation mui-content">
+        <div class="mui-row">
+            <div class="mui-col-xs-3 ">
+                <span class="mui-icon mui-icon-home "></span>
+                <a href="index.html"><p class="">首页</p></a>
+  
+            </div>
+            <div class="mui-col-xs-3">
+                <span class="mui-icon mui-icon-star active"></span>
+                <p class="active">动漫</p>
+            </div>
+            <div class="mui-col-xs-3">
+                <span class="mui-icon mui-icon-chatboxes"></span>
+                <a href="message.html"><p>风景</p></a>
+            </div>
+            <div class="mui-col-xs-3">
+                <span class="mui-icon mui-icon-flag"></span>
+                <a href="place.html"><p>宠物</p></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+      <script>
+        var gallery = mui('.mui-slider');
+            gallery.slider({
+              interval:2000//自动轮播周期，若为0则不自动播放，默认为0；
+            });
+            mui('.mui-scroll-wrapper').scroll({
+                indicators: false,
+	            deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+            });
+      
+      </script>
+  
+</body>
+</html>
